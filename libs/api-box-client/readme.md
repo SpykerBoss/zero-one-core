@@ -1,6 +1,6 @@
-# Z1 Lib Api Box Client
+# Z1 Lib Api Box Client 
 
-Documentation under construction.
+Basic Feathers service in a macro using localStorage by default
 
 ## Usage
 
@@ -16,4 +16,19 @@ Import
 
 import * from '@z1/lib-api-box-client'
 
+const api = createApiClient(props)
+
 ```
+### Configuration
+ * `path`: string (required)
+ * `options`: { } IO socket options (optional)
+ * `timeout`: number (optional) IO Socket timeout if call fails
+ * `storage`: Authentication client storage (default: `localStorage` if available, `MemoryStorage` otherwise)
+ * `auth`: [config] (optional)
+ * `configure`: [callback function] (optional)
+
+
+[config]: https://docs.feathersjs.com/api/authentication/client.html#configuration
+[callback function]: https://docs.feathersjs.com/api/application.html#configure-callback
+
+### #Documentation under construction.

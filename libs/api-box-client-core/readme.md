@@ -18,9 +18,7 @@ Import
 
 import * from '@z1/lib-api-box-client-core'
 
-const api = createApiClient({ 
-                path: `endpoint`,
-            })
+const api = createApiClient(props)
 
 ```
 ### Configuration
